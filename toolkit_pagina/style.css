@@ -1,0 +1,485 @@
+* {  
+  margin: 0;  
+  padding: 0;  
+  font-family: "poppins", sans-serif;  
+ }  
+ body {  
+  background: rgb(47, 47, 47);
+ }
+
+html{
+  scroll-behavior: smooth;
+}
+
+.nav1 {
+display: flex;
+justify-content: space-between;
+padding: 20px 150px;
+background-color: rgba(0, 0, 0, 0.705);
+align-items: center;
+}
+
+.ul1 {
+display: flex;
+gap: 50px;
+font-size: 1.2em;
+text-align: center;
+}
+
+.li1 {
+list-style: none;
+text-align: center;
+padding: 8px;
+transition: 0.6s;
+border-bottom: 1px solid transparent;
+}
+
+.li1:hover {
+  transition: 0.6s;
+  border-bottom: 1px solid white;
+}
+.ul1 .li1 a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+
+/* TODO LIST */
+
+.container {
+  display: block;
+  margin-left: 100px;
+  width: 400px;
+  margin: 100px;
+  background-color:#fff;
+  padding:0px 10px 10px 10px;
+  border-radius:10px
+}
+
+h2 {
+  text-align:center;
+  padding-top:10px;
+  margin-bottom:0px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li * {
+  float: left;
+}
+
+li,
+h3 {
+  clear: both;
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #333;
+}
+
+
+/* Heading */
+
+h3,
+label[for='new-task'] {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 20px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+input[type="text"]:focus {
+  color: #333;
+}
+
+
+/* New Task */
+
+label[for='new-task'] {
+  display: block;
+  margin: 0 0 20px;
+}
+
+input#new-task {
+  float: left;
+  width: 318px;
+}
+
+p > button:hover {
+  color: #0FC57C;
+}
+
+
+/* Task list */
+
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px;
+}
+
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+
+li > input[type="text"] {
+  width: 226px;
+}
+
+li > .delete:hover {
+  color: #CF2323;
+}
+
+
+/* Completed */
+
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+
+/* Edit Task */
+
+ul li input[type=text] {
+  display: none;
+}
+
+ul li.editMode input[type=text] {
+  display: block;
+}
+
+ul li.editMode label {
+  display: none;
+}
+
+/* Estilos de ejemplo para hacer que el horario se vea bien */
+table {
+	width: 100%;
+	border-collapse: collapse;
+  margin: -300px;
+  margin-left: 300px;
+  margin-top: -1900px;
+  margin-bottom: 300px;
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid rgb(255, 255, 255);
+	text-align: center;
+  background-color: lightgray;
+}
+
+th {
+	background-color: #eee;
+}
+
+td {
+	font-size: 14px;
+  
+}
+
+.horario {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor{
+    width: 45%;
+    min-width: 500px;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 70%;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+.scores{
+    margin-bottom: 50px;
+    text-align: right;
+}
+.weapons{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.weapons button{
+    background-color: #5fc1eb;
+    color: #000000;
+    border: none;
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+.details{
+    margin-top: 30px;
+    text-align: center;
+}
+.scores,.details{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+#result{
+    width: 180px;
+    padding: 10px 0;
+    margin: 30px auto;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+#user_choice,
+#computer_choice{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+span{
+    font-weight: 600;
+}
+
+.ContenerCalculadora{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculadora {
+  margin-top: 300px;
+  width: 400px;
+  height: 600px;
+  background-color: rgb(52, 90, 172);
+  display: grid;
+  grid-template-columns: repeat(4,80px);
+  grid-template-rows: 130px repeat(6,80px);
+  justify-content: center;
+  border-radius: 20px;
+  padding-top: 30px;
+  box-shadow: 15px 10px 0px 3px rgb(75, 75, 75);
+  margin-left: -265px;
+}
+
+#BotonCalculadora{
+  cursor: pointer;
+  margin: 5px;
+  padding: 0;
+  border-radius: 32px;
+  font-size: 1.5em;
+  border: none;
+  background-color: #fafafa;
+  box-shadow: 5px 5px 10px -3px #d10e0e40, -5px -5px 15px 3px #7cbdad1f;
+}
+
+button:focus {
+  outline: none;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.display {
+  grid-column: 1 / -1;
+  padding: 16px;
+  display: flex;
+  margin: 10px 10px 20px;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #000000;
+  border-radius: 32px;
+  text-align: right;
+  justify-content: space-between;
+  word-break: break-all;
+  box-shadow: 0px 0px 0px 10px #00000033;
+  color: white;
+}
+
+#valor-actual {
+  font-size: 1.5em;
+}
+
+#valor-anterior {
+  font-size: 2em;
+}
+
+iframe{
+  display: block;
+  width: 1200px;
+  height: 600px;
+  margin-top: 30px;
+  margin-left: -170px;
+  margin-bottom: 90%;
+  padding: 3%;
+}
+
+ .send-btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #3c59e7 ;
+  border-radius: 0.6em;
+  color: #3c59e7;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  width: initial;
+}
+.send-btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.send-btn {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.send-btn:hover {
+  box-shadow: 0 0 40px 40px #3c59e7 inset;
+}
+
+.form-wrapper {
+  display: flex;
+  width: 50%;
+  margin-top: 3%;
+  margin-left: 25%;
+  margin-bottom: 3%;
+  border: 1px solid white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.form-wrapper img {
+  width: 50%;
+}
+
+.message-form {
+  width: 50%;
+  padding: 20px;
+  background-color: rgba(18, 18, 18, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  border-bottom: 1px solid gray;
+  width: 70%;
+  padding: 5px;
+}
+
+.input-wrapper img {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.input-wrapper input, textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.input-wrapper textarea {
+  height: 50px;
+}
+
+h1{ 
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;  
+  width: 100%;
+}
+
+.logo img{
+  width: 200px;
+  display: inline-block;
+  
+}
+
+#nombre{
+  margin-left: -12px;
+  font-size: 13px;
+}

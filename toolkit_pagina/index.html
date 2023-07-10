@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Toolkit</title>
+</head>
+<body>
+
+    <nav class="nav1">
+        <div class="logo">
+        <img src="unnamed (1).png" alt="">
+        </div>
+    <ul class="ul1">
+            <li class="li1"><a href="index.html">inicio</a></li>
+            <li class="li1"><a href="#map">Mapa</a></li>
+            <li class="li1"><a href="formulario.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+   <!-- Cosas por hacer -->
+
+    <div class="container">
+        <h2>Lista de pendientes</h2>
+        <h3>Agregar tarea</h3>
+        <p>
+            <input id="new-task" type="text"><button>Agregar</button>
+        </p>
+
+        <h3>Por Hacer</h3>
+        <ul id="incomplete-tasks">
+        </ul>
+
+        <h3>Completado</h3>
+        <ul id="completed-tasks">
+        </ul>
+    </div>
+<script src="index.js"></script>
+
+ <!-- Fin de cosas por hacer -->
+
+ <!-- Horario -->
+
+	<div class="horario">
+		<table>
+			<thead>
+				<tr>
+					<th>Hora</th>
+					<th>Lunes</th>
+					<th>Martes</th>
+					<th>Miércoles</th>
+					<th>Jueves</th>
+					<th>Viernes</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td contenteditable id="celda1"></td> <!-- Hora celda1 -->
+					<td contenteditable id="celda2"></td> <!--  Lunes celda1 -->
+					<td contenteditable id="celda3"></td> <!-- Martes celda1 -->
+					<td contenteditable id="celda4"></td> <!-- Miercoles celda1 -->
+					<td contenteditable id="celda5"></td>  <!-- Jueves celda1 -->
+					<td contenteditable id="celda6"></td>  <!-- viernes celda1 -->
+				</tr>
+				<tr>
+					<td contenteditable id="celda7"></td> <!-- Hora celda2 -->
+					<td contenteditable id="celda8"></td> <!-- Lunes celda2 -->
+					<td contenteditable id="celda9"></td> <!-- Martes celda2 -->
+					<td contenteditable id="celda10"></td> <!-- Miercoles celda2 -->
+					<td contenteditable id="celda11"></td> <!-- Jueves celda2 -->
+					<td contenteditable id="celda12"></td> <!-- Viernes celda2 -->
+				</tr>
+				<tr>
+					<td contenteditable id="celda13"></td>  <!--Hora celda3 -->
+					<td contenteditable id="celda14"></td> <!--Lunes celda3 -->
+					<td contenteditable id="celda15"></td> <!--Martes celda3 -->
+					<td contenteditable id="celda16"></td> <!--Miercoles celda3 -->
+					<td contenteditable id="celda17"></td> <!--Jueves celda3 -->
+					<td contenteditable id="celda18"></td> <!--Viernes celda3 -->
+				</tr>
+				<tr>
+					<td contenteditable id="celda19"></td> <!--Hora celda4 -->
+					<td contenteditable id="celda20"></td> <!--Lunes celda4 -->
+					<td contenteditable id="celda21"></td> <!--Martes celda4 -->
+					<td contenteditable id="celda22"></td> <!--Miercoles celda4 -->
+					<td contenteditable id="celda23"></td> <!--Jueves celda4 -->
+					<td contenteditable id="celda24"></td> <!--Viernes celda4 -->
+				</tr>
+				<tr>
+					<td contenteditable id="celda25"></td> <!--Hora celda5 -->
+					<td contenteditable id="celda26"></td> <!--Lunes celda5 -->
+					<td contenteditable id="celda27"></td> <!--Martes celda5 -->
+					<td contenteditable id="celda28"></td> <!--Miercoles celda5 -->
+					<td contenteditable id="celda29"></td> <!--Jueves celda5 -->
+					<td contenteditable id="celda30"></td> <!--Viernes celda5 -->
+				</tr>
+				<tr>
+					<td contenteditable id="celda31"></td> <!--Hora celda6 -->
+					<td contenteditable id="celda32"></td> <!--Lunes celda6 -->
+					<td contenteditable id="celda33"></td> <!--Martes celda6 -->
+					<td contenteditable id="celda34"></td> <!--Miercoles celda6 -->
+					<td contenteditable id="celda35"></td> <!--Jueves celda6 -->
+					<td contenteditable id="celda36"></td> <!--Viernes celda6 -->
+				</tr>
+				<tr>
+					<td contenteditable id="celda37"></td> <!--Hora celda7 -->
+					<td contenteditable id="celda38"></td> <!--Lunes celda7 -->
+					<td contenteditable id="celda39"></td> <!--Martes celda7 -->
+					<td contenteditable id="celda40"></td> <!--Miercoles celda7 -->
+					<td contenteditable id="celda41"></td> <!--Jueves celda7 -->
+					<td contenteditable id="celda42"></td> <!--Viernes celda7 -->
+				</tr>
+				<tr>
+					<td contenteditable id="celda43"></td> <!--Hora celda8 -->
+					<td contenteditable id="celda44"></td> <!--Lunes celda8 -->
+					<td contenteditable id="celda45"></td> <!--Martes celda8 -->
+					<td contenteditable id="celda46"></td> <!--Miercoles celda8 -->
+					<td contenteditable id="celda47"></td> <!--Jueves celda8 -->
+					<td contenteditable id="celda48"></td> <!--Viernes celda8 -->
+				</tr>
+				<tr>
+					<td contenteditable id="celda49"></td> <!--Hora celda9 -->
+					<td contenteditable id="celda50"></td> <!--Lunes celda9 -->
+					<td contenteditable id="celda51"></td> <!--Martes celda9 -->
+					<td contenteditable id="celda52"></td> <!--Miercoles celda9 -->
+					<td contenteditable id="celda53"></td> <!--Jueves celda9 -->
+					<td contenteditable id="celda54"></td> <!--Viernes celda9 -->
+        </tr>
+    
+    <script src="horario.js"></script>
+
+     <!-- Fin de Horario -->
+
+     <!-- Piedra, Papel o Tijera -->
+
+     <div class="contenedor">
+      <div class="scores">
+          <p>Computadora: 
+              <span id="computer_score">0</span>
+          </p>
+          <p>
+              Tu:
+              <span id="user_score">0</span>
+          </p>
+      </div>
+      <div class="weapons">
+          <button onclick="checker('piedra')">
+              <i class="far fa-hand-rock"></i>
+          </button>
+          <button onclick="checker('papel')">
+              <i class="far fa-hand-paper"></i>
+          </button>
+          <button onclick="checker('tijeras')">
+              <i class="far fa-hand-scissors"></i>
+          </button>
+      </div>
+      <div class="details">
+          <p id="user_choice"></p>
+          <p id="comp_choice"></p>
+          <p id="result"></p>
+      </div>
+  </div>
+
+  <script src="juego.js"></script>
+
+    <!-- Fin de Piedra, Papel o Tijera -->
+
+    <!-- Calculadora -->
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="calculadora.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="ContenedorCalculadora">
+        <div class="calculadora">
+            <div class="display">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>
+            <button id="BotonCalculadora" class="col-2" onclick="display.borrarTodo()">C</button>
+            <button id="BotonCalculadora" onclick="display.borrar()">&larr;</button>
+            <button id="BotonCalculadora" class="operador" value="dividir">%</button>
+            <button id="BotonCalculadora" class="numero">7</button>
+            <button id="BotonCalculadora" class="numero">8</button>
+            <button id="BotonCalculadora" class="numero">9</button>
+            <button id="BotonCalculadora" class="operador" value="multiplicar">X</button>
+            <button id="BotonCalculadora" class="numero">4</button>
+            <button id="BotonCalculadora" class="numero">5</button>
+            <button id="BotonCalculadora" class="numero">6</button>
+            <button id="BotonCalculadora" class="operador" value="restar">-</button>
+            <button id="BotonCalculadora" class="numero">1</button>
+            <button id="BotonCalculadora" class="numero">2</button>
+            <button id="BotonCalculadora" class="numero">3</button>
+            <button id="BotonCalculadora" class="operador" value="sumar">+</button>
+            <button id="BotonCalculadora" class="col-2 numero">0</button>
+            <button id="BotonCalculadora" class="numero">.</button>
+            <button id="BotonCalculadora" class="operador" value="igual">=</button>
+        </div>
+    </div>
+    <!-- Fin de calculadora-->
+
+    <!-- Mapa -->
+
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14933.669935644708!2d-103.33479631614428!3d20.6525874803327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b23af5e4996d%3A0x5098874653d159f3!2sUTEG%20Plantel%20Ol%C3%ADmpica!5e0!3m2!1ses-419!2smx!4v1676778147293!5m2!1ses-419!2smx" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <!-- fin de Mapa -->
+
+</body>
+</html>
